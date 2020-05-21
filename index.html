@@ -1,0 +1,31 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>This is a demo for avroVuePhonetic</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id='app'>
+        <avro-vue type="text" :bangla="true" :value.sync="text" :mode="'textarea'"
+            :placeholder="'Ctrl+M to switch keyboard'">
+        </avro-vue>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="dist/avro-vue.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        new Vue({
+            el: '#app',
+            data: function () {
+                return {
+                    text: ""
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
